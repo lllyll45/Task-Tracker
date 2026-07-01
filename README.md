@@ -34,16 +34,57 @@ Ensure you have the following Java source files in your project directory:
 Open your terminal in the project directory and run the following command to compile both files:
 
 ```bash
-javac TaskCLI.java Task.java 
+
+javac TaskCLI.java Task.java
+
+```
 
 ### 3. Run the Application
 
-Open your terminal in the project directory and run the following command to execute the application:
-
 ```bash
+
 java TaskCLI <command> [arguments]
 
-Example:
+```
+
+### Usage Examples
 
 ```bash
+
+# Add a new task
+
 java TaskCLI add "Buy groceries"
+
+# Update a task
+
+java TaskCLI update 1 "Buy groceries and milk"
+
+# Delete a task
+
+java TaskCLI delete 1
+
+# Mark as in progress
+
+java TaskCLI mark-in-progress 1
+
+# Mark as done
+
+java TaskCLI mark-done 1
+
+# List all tasks
+
+java TaskCLI list
+
+# List only done tasks
+
+java TaskCLI list done
+
+# List only in-progress tasks
+
+java TaskCLI list in-progress
+
+# List only todo tasks
+
+java TaskCLI list todo
+
+```
